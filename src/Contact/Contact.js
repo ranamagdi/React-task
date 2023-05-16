@@ -67,16 +67,16 @@ function Contact(){
       <div className="status container">
         <div className="text-center ">
          <ul className="list-unstyled row">
-        <li className="col-lg-4 col-sm-12"><i className="fas fa-map-marker-alt fa-2x mt-4"></i>
-            <p>San Francisco, CA 94126, USA</p>
+        <li className="col-lg-4 col-sm-12"><i className="fas fa-map-marker-alt fa-2x "></i>
+            <p className="p-contact">San Francisco, CA 94126, USA</p>
         </li>
 
-        <li className="col-lg-4 col-sm-12"><i className="fas fa-phone mt-4 fa-2x"></i>
-            <p>+ 01 234 567 89</p>
+        <li className="col-lg-4 col-sm-12"><i className="fas fa-phone fa-2x"></i>
+            <p className="p-contact">+ 01 234 567 89</p>
         </li>
 
-        <li className="col-lg-4 col-sm-12"><i className="fas fa-envelope mt-4 fa-2x"></i>
-            <p>contact@Fortune.com</p>
+        <li className="col-lg-4 col-sm-12"><i className="fas fa-envelope fa-2x"></i>
+            <p className="p-contact">contact@Fortune.com</p>
         </li>
     </ul>
 </div>

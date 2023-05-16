@@ -6,10 +6,12 @@ import Service from "./Service";
 import Advertising from "./Advertising";
 import Authors from "./Authors";
 import Footer from "./Footer";
+import { CartProvider } from "react-use-cart";
+import ScrollToTop from "react-scroll-to-top";
 
 function HomePage(){
     return(
-    <div>
+      <CartProvider>
       <Navbar/>
       <Carousel/>
       <Welcome/>
@@ -17,9 +19,9 @@ function HomePage(){
       <Advertising/>
       <Authors/>
       <Footer/>
-
+      <ScrollToTop smooth="true" className="scroll-style" width="35" />
    
-    </div>
+    </CartProvider>
     )
   }
   export default HomePage;

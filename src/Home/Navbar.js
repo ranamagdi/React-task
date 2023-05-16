@@ -8,7 +8,7 @@ function Navbar(){
       <CartProvider>
             <div className="header">              
     
-    <nav className="navbar navbar-expand-lg fixed-top">
+    <nav className="navbar navbar-expand-lg fixed-top pt-3">
       <div className="container">                       
           <a className="navbar-brand logo" href="#">                 
               <img src="images/logo2.png"/>
@@ -44,8 +44,8 @@ function Navbar(){
           <li className="nav-item">
               <NavLink className="nav-link" to="/contact">Contact us</NavLink>
             </li>  
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/cart" >Cart{totalItems}</NavLink>
+            <li className="nav-item nav-last">
+              <NavLink className="nav-link not" to="/cart" ><i className="fa-solid fa-cart-shopping cart-icon"></i> <span className="total">{totalItems}</span></NavLink>
             </li>            
         </ul>                   
         

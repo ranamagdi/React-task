@@ -5,13 +5,15 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-   
+    position: relative;
+    min-height: 100vh;
     
 }
 
 /*nav start*/
 
 nav{
+   
     background-color: white;
     border-bottom:#ddd 1px solid;
     box-shadow:  0 0 1px .06rem #dcdcdc,
@@ -20,7 +22,9 @@ nav{
   
 }
 .header{
+    padding-top: 20px;    
     margin-bottom: 30px;
+  
 }
 .header .log-links{   
     padding: 15px 0;
@@ -55,22 +59,12 @@ nav{
     cursor: pointer;
 }
 
-/* .header.nav-link:focus::after{
-    width: 100%;
-  }
- .header.nav-link:focus::after{
-     content: "";    
-     height: 2px;
-     display: block;
-     background-color:#415f75;
-     margin-top: 2px;
-     transition: .5s;
- }
-  */
- .header .nav-link:hover::after{
+
+
+ .header .nav-link:not(.not):hover::after{
     width: 100%;
  }
- .header .nav-link::after{
+ .header .nav-link:not(.not)::after{
     content: "";
     width: 0;   
     height: 2px;
@@ -83,7 +77,32 @@ nav{
     background-color: #ddd;
  }
  
+ .cart-icon{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color:#415f75;
+    cursor: pointer;
+    
+}
+.total{
+    color:black;
+    width: 23px;
+    text-align: center;
+    height: 23px;
+    margin-left:-8px;
+    padding: 1px 2px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color:#02b3e0;    
+    display: inline-block;
+    position: absolute;
+    bottom: 38px;
  
+}
+.nav-last{
+    margin-left: 17rem;
+}
 
 /*home*/
 
@@ -109,18 +128,24 @@ nav{
     font-weight: 600;
     padding: 10px 26px;
 }
+.image-carousel{
+    height: 380px;
+}
+.text-carousel .btn{
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #02b3e0 !important;
+    border: none;
+    
+
+}
 /*welcome start*/
 
 .welcome h2{
  text-align: center;
  padding: 15px 0 2px 0;
 }
-.line{
-    width: 6%;
-    height: 3px;
-    background-color: #02b3e0;
-    margin: 0 auto 0 auto;
-}
+
 .welcome p{   
     text-align: center;
     padding-top: 15px;
@@ -170,84 +195,100 @@ nav{
 
 }
 /*service start*/
-.service{
-    margin-top: 25px;
-}
-.service h2{
-
-    text-align: center;
-    padding: 15px 0 2px 0;
+.best{    
+    margin: 45px 0;
+    overflow:hidden;
 }
 
-.image-transfrom{
-    display: flex;
-    margin: 28px 0 55px 0;
-}
-.image-transfrom .spirate-part{
+
+
+.best .best-text h1{
     text-align: center;
-    border-right:#b3cbd7 solid 2px;
-    flex-grow: 1;
+    color: #071e33;
+    font-size: 30px;
+    text-transform: capitalize;
 }
-.image-transfrom .spirate-part:last-child{
-    border-right: none;
+ .line{
+    width: 8%;
+    height: 2px;    
+    background-color:#02b3e0;
+    margin:10px auto 45px auto;
+    transition: width .5s;
 }
-.image-transfrom .spirate-part .spirate-img{
-    background-image: url(../images/image-section.png);
-    height: 103px;
-    width: 120px;
-    background-repeat: no-repeat;
-   
+ .line:hover{
+    width: 11%;
 }
-.image-transfrom .spirate-part .spirate-text h4{
-    padding: 5px 0;
+.best .bests-text{  
+    display: flex; 
+    justify-content: center;  
+    margin-bottom: 30px;
+    text-align: center;
 }
-.image-transfrom .spirate-part .spirate-text p {
+.best .bests-text p{
+    padding-left: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #071e33;
+    font-weight: 600;
+}
+.best .bests-text p:hover{
     color: #02b3e0;
+}
+.best .books{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+   
+
+}
+.best .books .book{
+    margin-top: 45px;
+    padding-bottom: 15px;
+
+}
+.best .books .book .content{
+    margin-top: 15px;
+
+    
+}
+
+.best .books .book .content p{
+    margin: 10px 0;
     font-size: 18px;
-    
-}
 
-.image-transfrom .spirate-part .img1{
-  background-position-y: top;
-  margin-left: 95px;
-  transition: all .5s;
+ 
 }
-.image-transfrom .spirate-part:hover .img1{
-    background-position-y: bottom;
-  
-}
-.image-transfrom .spirate-part .img2{
-    background-position-y: top;
-    background-position-x: -105px;
-    margin-left: 87px;
-    transition: all .5s;
-  }
-
-  .image-transfrom .spirate-part:hover .img2{
-    background-position-y: bottom;
-
-}
-  .image-transfrom .spirate-part .img3{
-    background-position-y: top;
-    background-position-x: -205px;   
-    margin-left: 66px;
-    transition: all .5s;
-    
-  }
-  
-  .image-transfrom .spirate-part:hover .img3{
-    background-position-y: bottom;
+.best .books .book .content h4{
    
+    font-size: 20px;
 }
-  .image-transfrom .spirate-part .img4{
-    background-position-y: top;
-    background-position-x: -340px;
-    margin-left: 100px;
-    transition: all .5s;
-  }
-  .image-transfrom .spirate-part:hover .img4{
-    background-position-y: bottom;
-   
+.best .books .book .image{
+    background-color: #b3cbd7;
+    border-radius: 10px;
+    height: 340px;
+    width: 280px;
+    position: relative; 
+ 
+    
+
+}
+.best .books .book .image h4{
+    position: absolute;
+    width: 200%;
+    color:#071e33;
+    font-size: 18px;
+    margin-left: 279px;
+    margin-top: 115px;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+}
+.best .books .book .image img{
+ height: 340px;
+ width: 260px;
+position: absolute;
+ 
+
 }
  /*advertising*/
  .advertising{
@@ -260,7 +301,8 @@ nav{
    }
 /*authors start*/
 .authors{
-    margin-top: 25px;
+    margin-top: 20px;
+    padding-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .authors h2{
@@ -273,8 +315,8 @@ nav{
 }
 
 .authors .content .image{
-    margin-top: 8px;
-    padding: 20px;
+  
+    padding:0 20px 20px 20px;
     text-align: center;
        
     
@@ -294,8 +336,12 @@ footer h5{
 }
 footer{
     margin-top: 40px;
-  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.9rem; 
 }
+
 /*about start*/
 
 .about .content{
@@ -334,6 +380,7 @@ footer{
    background-color: #071e33;
    border-radius: 0 0 30% 30%;
    text-align: center;
+ 
 }
 .contact form{
     padding-top: 10px;
@@ -342,12 +389,18 @@ footer{
     font-size: 18px;
  
 }
+.p-contact{
+    font-size: 18px;
+    
+}
+
 .status{
     margin-top: 53px;
 } 
 /*news start*/
 .main-layout{
     margin-top: 80px;
+    padding-bottom: 60px;
 }
 .p_news{
     font-size: 17px;
@@ -362,7 +415,8 @@ footer{
 }
 /*f_a_q start*/
 .f_a_q{
-    margin-top: 60px;
+    margin-top: 40px;
+    padding-bottom: 70px;
 }
 .btn-hover{
     font-size: 17px;
@@ -408,7 +462,7 @@ footer{
     height: 26rem;
     border: none;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 8.5rem;
     
  }
 .image-card{
@@ -416,10 +470,12 @@ footer{
     width: 20rem;
 }
 
+
 .cardtext-h5{
     font-weight: 700;
     color: #071e33;
     margin-top: 10px;
+   
 }
 .cardtext-h4{
     color:#415f75;
@@ -481,5 +537,25 @@ footer{
   .cart-style{
     position: relative;
     top: 40px;
-    padding-bottom: 20px;
+    
+    
+  }
+  .table-style td,th{
+    font-size: 19px;
+  }
+  .h3-style{
+    color:#071e33;
+    font-weight: 500;
+  }
+
+  .cart-style h2 span{
+    text-decoration: underline;
+  }
+  .btn-style{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  /*Scroll start*/
+  .scroll-style{
+    background-color: #02b3e0!important;
   }
