@@ -17,12 +17,12 @@
     "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.abebooks.co.uk%2F9780852230206%2FGood-Housekeeping-Cookery-Book-0852230206%2Fplp&psig=AOvVaw27V7dkX2ACYQAa7TkMp-u5&ust=1684181380750000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOCbxNzO9f4CFQAAAAAdAAAAABAJ"
     },
     {
-    "title": "The Definitive Guide to MongoDB, 3rd Edition",
-    "subtitle": "A complete guide to dealing with Big Data using MongoDB",
+    "title": "The 8-Week Blood Sugar Diet Recipe Book",
+    "subtitle": "Following Dr Michael Mosley's Number 1 bestselling 8-week Blood Sugar Diet",
     "isbn13": "9781484211830",
     "price": "$49.99",
-    "image": "https://itbook.store/img/books/9781484211830.png",
-    "url": "https://itbook.store/books/9781484211830"
+    "image": "https://productimages.worldofbooks.com/1780722931_thumbnail.jpg",
+    "url": "https://www.wob.com/en-gb/books/dr-clare-bailey/8-week-blood-sugar-diet-recipe-book/9781780722931"
     },
     {
     "title": "Paddington's Cookery Book",
@@ -33,12 +33,12 @@
     "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.co.uk%2FPADDINGTONS-COOKERY-BOOK-Michael-Bond%2Fdp%2F0007423675&psig=AOvVaw27V7dkX2ACYQAa7TkMp-u5&ust=1684181380750000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOCbxNzO9f4CFQAAAAAdAAAAABAR"
     },
     {
-    "title": "Pentaho Analytics for MongoDB",
-    "subtitle": "Combine Pentaho Analytics and MongoDB to create powerful analysis and reporting solutions",
+    "title": "The Hairy Bikers Mediterranean Adventure",
+    "subtitle": "A celebration of the most delicious and healthy food in the world",
     "isbn13": "9781782168355",
-    "price": "$16.99",
-    "image": "https://itbook.store/img/books/9781782168355.png",
-    "url": "https://itbook.store/books/9781782168355"
+    "price": "$19.99",
+    "image": "https://productimages.worldofbooks.com/1409171914_thumbnail.jpg",
+    "url": "https://www.wob.com/en-gb/books/hairy-bikers/hairy-bikers-mediterranean-adventure-tv-tie-in/9781409171911"
     },
     {
     "title": "The complete Indian Diet",
@@ -63,6 +63,13 @@
     "price": "$44.99",
     "image": "https://kbimages1-a.akamaihd.net/d70288d1-2725-430b-8797-946f41291f58/353/569/90/False/cooking-made-easy-the-ideal-cookery-book-for-beginners-that-goes-beyond-cooking.jpg",
     "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kobo.com%2Fgr%2Fen%2Febook%2Fcooking-made-easy-the-ideal-cookery-book-for-beginners-that-goes-beyond-cooking&psig=AOvVaw27V7dkX2ACYQAa7TkMp-u5&ust=1684181380750000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOCbxNzO9f4CFQAAAAAdAAAAABAg"
+    },
+    { "title": "The Hairy Bikers Eat to Beat Type 2 Diabetes",
+    "subtitle": "The bestselling, big-hearted and down-to-earth chefs, The Hairy Bikers",
+    "isbn13": "9781785289989",
+    "price": "$7.5",
+    "image": "https://productimages.worldofbooks.com/1841884073_thumbnail.jpg",
+    "url": "https://www.wob.com/en-gb/books/hairy-bikers/hairy-bikers-eat-to-beat-type-2-diabetes/9781841884073"
     }
   
     ]

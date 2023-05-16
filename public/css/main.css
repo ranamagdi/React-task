@@ -5,6 +5,8 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+   
+    
 }
 
 /*nav start*/
@@ -14,7 +16,11 @@ nav{
     border-bottom:#ddd 1px solid;
     box-shadow:  0 0 1px .06rem #dcdcdc,
     0 0 1px .06rem #ddd;
+    
   
+}
+.header{
+    margin-bottom: 30px;
 }
 .header .log-links{   
     padding: 15px 0;
@@ -286,7 +292,10 @@ nav{
 footer h5{
     color: #ddd;
 }
-
+footer{
+    margin-top: 40px;
+  
+}
 /*about start*/
 
 .about .content{
@@ -391,4 +400,86 @@ footer h5{
 
 .h3-accordion{
     background-color: #071e33;
+ 
 }
+/*Api start*/
+.card_style{
+    width: 20rem;
+    height: 26rem;
+    border: none;
+    text-align: center;
+    margin-bottom: 50px;
+    
+ }
+.image-card{
+    height: 380px;
+    width: 20rem;
+}
+
+.cardtext-h5{
+    font-weight: 700;
+    color: #071e33;
+    margin-top: 10px;
+}
+.cardtext-h4{
+    color:#415f75;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+ .feature-content{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    width:100%;
+    height:380px;
+    text-align: center;
+    background-color:rgba(2, 179, 224, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition:1s;
+ }
+ .card_style:hover .feature-content{
+    opacity:1;
+    visibility: visible;
+ }
+ .feature-content .text{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+ }
+
+
+ .feature-content a{
+    color:white;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-bottom: 25px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition:.5s;
+    transition-delay: .4s;
+    background-color: #071e33a2;
+    border-radius: 60px;
+ 
+ }
+
+ .card_style:hover .feature-content a{
+    opacity: 1;
+    visibility: visible;
+ }
+
+ /*car start*/
+  .cart-style{
+    position: relative;
+    top: 40px;
+    padding-bottom: 20px;
+  }

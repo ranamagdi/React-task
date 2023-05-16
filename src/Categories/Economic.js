@@ -5,12 +5,12 @@ import { Col, Container, Row,Card,CardBody,CardTitle,CardText} from "reactstrap"
 import Footer from "../Home/Footer";
 
 
-class Science extends Component{
+class Economic extends Component{
     state={
         product:[]
     }
     componentDidMount(){
-        axios.get('scripts/Science.json')
+        axios.get('scripts/Economic.json')
         .then((result)=>{
             this.setState(
                 {
@@ -26,18 +26,24 @@ class Science extends Component{
                <Container>
                 <Row>
                 {this.state.product.map((item)=>
-                <Col className="mt-5">
+                <Col className="mt-5 col-lg-4 col-md-6 col-sm-12">
                     <Card className="card_style">
-                        <img src={item.image}/>
+                        <img src={item.image} className="image-card"/>
                         <CardBody>
-                            <CardTitle tag="h5">
+                        <CardTitle tag="h4" className="cardtext-h4">
                            {item.title}
                             </CardTitle>
                         
-                            <CardText tag="h6">
+                            <CardText tag="h5" className="cardtext-h5">
                             {item.price}
                             </CardText>
                          </CardBody>
+                         <div class="feature-content">
+                            <div class="text">
+                             <a className="col-lg-12"><i class="fa-solid fa-cart-plus"></i></a> 
+                               <a className="col-lg-12">More details</a>
+                            </div>
+                        </div>
                         </Card>
                  
                  </Col>
@@ -50,4 +56,4 @@ class Science extends Component{
         )
     }
 }
-export default Science
+export default Economic;

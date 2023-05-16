@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { CartProvider, useCart } from "react-use-cart";
 
 function Navbar(){
+  var {totalItems}=useCart();
     return(
-        <div>
+      <CartProvider>
             <div className="header">              
     
     <nav className="navbar navbar-expand-lg fixed-top">
@@ -18,31 +20,33 @@ function Navbar(){
         <div className="collapse navbar-collapse links " id="collapsibleNavbar">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link className="nav-link" to="/" >Home</Link>
+            <NavLink className="nav-link" to="/" >Home</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/about" >About us</Link>
+            <NavLink className="nav-link" to="/about" >About us</NavLink>
           </li>
           <li className="nav-item ">                 
             <div className="dropdown nav-link">
               <a className="dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
-              <ul className="dropdown-menu bg-light">
-                  <li><Link className="dropdown-item" to="/science" >Science Books</Link></li>
-                  <li><Link className="dropdown-item" to="/cookery">Cookery books</Link></li>                      
-                  <li><a className="dropdown-item">Family Books</a></li>  
-                  <li><a className="dropdown-item">Business books</a></li>                     
+              <ul className="dropdown-menu bg-light">                 
+                  <li><NavLink className="dropdown-item" to="/cookery">Cookery books</NavLink></li>                      
+                  <li><NavLink className="dropdown-item" to="/family">Family Books</NavLink></li>  
+                  <li><NavLink className="dropdown-item" to="/economic">Economic books</NavLink></li>                     
                 </ul>
           </div>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/f_a_q">F.A.Q</Link>
+            <NavLink className="nav-link" to="/f_a_q" >F.A.Q </NavLink>
           </li> 
           <li className="nav-item">
-            <Link className="nav-link" to="/news">News</Link>
+            <NavLink className="nav-link" to="/news">News</NavLink>
           </li> 
           <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact us</Link>
-            </li>              
+              <NavLink className="nav-link" to="/contact">Contact us</NavLink>
+            </li>  
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/cart" >Cart{totalItems}</NavLink>
+            </li>            
         </ul>                   
         
       </div>         
@@ -51,7 +55,7 @@ function Navbar(){
   </div>
 
            
-        </div>
+       </CartProvider>
     )
 }
 

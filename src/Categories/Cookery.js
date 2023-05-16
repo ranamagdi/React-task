@@ -26,18 +26,24 @@ class Cookery extends Component{
                <Container>
                 <Row>
                 {this.state.product.map((item)=>
-                <Col className="mt-5">
-                    <Card className="card_style">
-                        <img src={item.image}/>
+                <Col className="mt-5 col-lg-4 col-md-6 col-sm-12">
+                <Card className="card_style">
+                    <img src={item.image} className="image-card"/>
                         <CardBody>
-                            <CardTitle tag="h5">
+                            <CardTitle tag="h4" className="cardtext-h4">
                            {item.title}
                             </CardTitle>
                         
-                            <CardText tag="h6">
+                            <CardText tag="h5" className="cardtext-h5">
                             {item.price}
                             </CardText>
                          </CardBody>
+                         <div class="feature-content">
+                            <div class="text">
+                             <a className="col-lg-12"><i class="fa-solid fa-cart-plus"></i></a> 
+                               <a className="col-lg-12">More details</a>
+                            </div>
+                        </div>
                         </Card>
                  
                  </Col>
