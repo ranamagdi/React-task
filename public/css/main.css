@@ -620,4 +620,22 @@ footer{
     .image-carousel{
         width: 80%;
     }
+    .card_style{
+        width: 21rem;
+      
+        
+     }
+     .card_style1{
+        width: 20rem;
+       
+    
+     }
+     .image-card1{
+        
+        width: 20rem;
+    }
+    .image-card{
+     
+        width: 21rem;
+    }
   }
