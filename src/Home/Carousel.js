@@ -26,7 +26,7 @@ function Carousel(){
           <div className="carousel-item pb-4 text-img">
             <img src="images/book2.jpg" className="d-block w-100 image-carousel" /> 
             <div className="carousel-caption text-carousel">                       
-                        < NavLink className="btn btn-primary" to="/cookery">See the collection</NavLink>
+                        < NavLink className="btn btn-primary" to="/economic">See the collection</NavLink>
              </div>           
           </div>
           <div className="carousel-item pb-4 text-img">
@@ -39,7 +39,7 @@ function Carousel(){
           <div className="carousel-item pb-4 text-img">
             <img src="images/book3.jpg" className="d-block w-100 image-carousel"/>  
             <div className="carousel-caption text-carousel">                       
-                        < NavLink className="btn btn-primary" to="/economic">See the collection</NavLink>
+                        < NavLink className="btn btn-primary" to="/cookery">See the collection</NavLink>
              </div>       
           </div>
           

@@ -4,6 +4,7 @@ import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import Footer from "../Home/Footer";
 import Navbar from "../Home/Navbar";
+import ScrollToTop from "react-scroll-to-top";
 
 function Cart() {
 
@@ -81,6 +82,7 @@ function Cart() {
             <Navbar/>
             <Cart/>
             <Footer/>
+            <ScrollToTop smooth="true" className="scroll-style" width="35" />
         </CartProvider>
     )
   }

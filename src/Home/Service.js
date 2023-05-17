@@ -57,8 +57,8 @@ function Service(){
        <Row>
        {products.map((item)=>
        <Col key={item.id} className="mt-3 col-lg-3 col-md-6 col-sm-12">        
-       <Card className="card_style">        
-           <img src={item.image} className="image-card"/>
+       <Card className="card_style1">        
+           <img src={item.image} className="image-card1"/>
                <CardBody>
                <CardTitle tag="h4" className="cardtext-h4">
                   {item.title}
@@ -70,7 +70,7 @@ function Service(){
                 </CardBody>
                 <div className="feature-content">
                    <div className="text">
-                    <a className="col-lg-12" onClick={() => addItem(item)}><i className="fa-solid fa-cart-plus"></i></a> 
+                    <a className="col-lg-12 col-md-12 col-sm-12" onClick={() => addItem(item)}><i className="fa-solid fa-cart-plus"></i></a> 
                     
                    
                   

@@ -3,6 +3,7 @@ import About from "./About";
 import Navbar from "../Home/Navbar";
 import Footer from "../Home/Footer";
 import { CartProvider } from "react-use-cart";
+import ScrollToTop from "react-scroll-to-top";
 
 
 function AboutPage(){
@@ -10,7 +11,8 @@ function AboutPage(){
       <CartProvider>
           <Navbar/>
           <About/>
-          <Footer/>        
+          <Footer/>  
+          <ScrollToTop smooth="true" className="scroll-style" width="35" />      
       </CartProvider>
 
     )

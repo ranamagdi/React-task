@@ -14,10 +14,10 @@ function Navbar(){
               <img src="images/logo2.png"/>
           </a>
        
-        <button className="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="true">
-          <span className="navbar-toggler-icon"></span>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse links " id="collapsibleNavbar">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav">
           <li className="nav-item">
             <NavLink className="nav-link" to="/" >Home</NavLink>

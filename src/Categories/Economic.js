@@ -2,7 +2,7 @@ import Navbar from "../Home/Navbar";
 import { Col, Container, Row,Card,CardBody,CardTitle,CardText} from "reactstrap";
 import Footer from "../Home/Footer";
 import { CartProvider, useCart } from "react-use-cart";
-import { Link } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
 
 
 function EconomicCart(){
@@ -133,6 +133,7 @@ function EconomicCart(){
              <Navbar/>  
             <EconomicCart/>
             <Footer/>
+            <ScrollToTop smooth="true" className="scroll-style" width="35" />
           </CartProvider>
         );
       }
