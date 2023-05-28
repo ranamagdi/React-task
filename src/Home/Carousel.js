@@ -32,7 +32,7 @@ function Carousel(){
           <div className="carousel-item pb-4 text-img">
             <img src="images/event.jpg" className="d-block w-100 image-carousel"/>  
             <div className="carousel-caption text-carousel">            
-            < NavLink className="btn btn-primary" to="/news">See the recenet events</NavLink>    
+            < NavLink className="btn btn-primary" to="/news">See the recent events</NavLink>    
             </div>      
           </div>
 
