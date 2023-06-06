@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 
 function CookeryCart(){
     const { addItem } = useCart();
-    
-    return(      
-  
+
+    return(
+
             <div className="cards">
-                 
+
                <Container>
                 <Row>
                 {CookeryProducts.map((item,index)=>
@@ -24,38 +24,38 @@ function CookeryCart(){
                         <CardTitle tag="h4" className="cardtext-h4">
                            {item.title}
                             </CardTitle>
-                        
+
                             <CardText tag="h5" className="cardtext-h5">
                             ${item.price}
                             </CardText>
                          </CardBody>
-                         <div class="feature-content">
-                            <div class="text">
-                             <a className="col-lg-12" onClick={() => addItem(item)}><i class="fa-solid fa-cart-plus"></i></a> 
-                             <Link className="col-lg-12" to={`/cookerydetails/${item.title}`}>Details</Link> 
+                         <div className="feature-content">
+                            <div className="text">
+                             <a className="col-lg-12 icon_add" onClick={() => addItem(item)}><i className="fa-solid fa-cart-plus"></i></a>
+                             <Link className="col-lg-12" to={`/cookerydetails/${item.title}`}>Details</Link>
                             </div>
                         </div>
                         </Card>
-                 
+
                  </Col>
                )}
                 </Row>
                </Container>
-              
-            
+
+
             </div>
         )
     }
     function Cookery() {
         return (
           <CartProvider>
-             <Navbar/>  
+             <Navbar/>
             <CookeryCart/>
             <Footer/>
             <ScrollToTop smooth="true" className="scroll-style" width="35" />
           </CartProvider>
         );
       }
-    
+
 
 export default Cookery;

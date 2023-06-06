@@ -2,18 +2,19 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { CartProvider, useCart } from "react-use-cart";
 
+
 function Navbar(){
   var {totalItems}=useCart();
     return(
       <CartProvider>
-            <div className="header">              
-    
+            <div className="header">
+
     <nav className="navbar navbar-expand-lg fixed-top pt-3">
-      <div className="container">                       
-          <a className="navbar-brand logo" href="#">                 
-              <img src="images/logo2.png"/>
-          </a>
-       
+      <div className="container">
+      <NavLink className="navbar-brand logo" to="/" >
+      <h2><span>F</span>ortune</h2>
+      </NavLink>
+         
           <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,36 +26,36 @@ function Navbar(){
           <li className="nav-item">
             <NavLink className="nav-link" to="/about" >About us</NavLink>
           </li>
-          <li className="nav-item ">                 
+          <li className="nav-item ">
             <div className="dropdown nav-link">
               <a className="dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
-              <ul className="dropdown-menu bg-light">                 
-                  <li><NavLink className="dropdown-item" to="/cookery">Cookery books</NavLink></li>                      
-                  <li><NavLink className="dropdown-item" to="/family">Family Books</NavLink></li>  
-                  <li><NavLink className="dropdown-item" to="/economic">Economic books</NavLink></li>                     
+              <ul className="dropdown-menu bg-light">
+                  <li><NavLink className="dropdown-item" to="/cookery">Cookery books</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/family">Family Books</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/economic">Economic books</NavLink></li>
                 </ul>
           </div>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/f_a_q" >F.A.Q </NavLink>
-          </li> 
+          </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/news">News</NavLink>
-          </li> 
+          </li>
           <li className="nav-item">
               <NavLink className="nav-link" to="/contact">Contact us</NavLink>
-            </li>  
+            </li>
             <li className="nav-item nav-last">
               <NavLink className="nav-link not" to="/cart" ><i className="fa-solid fa-cart-shopping cart-icon"></i> <span className="total">{totalItems}</span></NavLink>
-            </li>            
-        </ul>                   
-        
-      </div>         
+            </li>
+        </ul>
+
+      </div>
     </div>
     </nav>
   </div>
 
-           
+
        </CartProvider>
     )
 }

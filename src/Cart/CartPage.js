@@ -18,11 +18,11 @@ function Cart() {
       totalItems,
       cartTotal,
     } = useCart();
-  
+
     if (isEmpty) {
       return(<h2 className="text-center pt-5">Your cart is empty</h2>);
   }
-  
+
     return (
       <div className="cart-style">
         <h2 className="text-center my-3">Your Cart has <span>{totalUniqueItems}</span> uniquely products
@@ -36,7 +36,7 @@ function Cart() {
           <th>Quantity</th>
           <th>Price</th>
           <th>Opration</th>
-         </tr> 
+         </tr>
          </thead>
           <tbody>
           {items.map((item) => (
@@ -58,7 +58,7 @@ function Cart() {
                 +
               </button>
               <button className="btn btn-danger btn-style" onClick={() => removeItem(item.id)}><i class="fa-solid fa-trash-can"></i>
-              
+
               </button>
               </td>
             </tr>
