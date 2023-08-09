@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### The Deployment link
 https://taupe-kheer-2e976c.netlify.app/
-](https://master--taupe-kheer-2e976c.netlify.app/)https://master--taupe-kheer-2e976c.netlify.app/
+
